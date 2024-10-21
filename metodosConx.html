@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssframe.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="framewoek.html">Framework</a></li>
+                <li><a href="lineaTime.html">Linea De Tiempo</a></li>
+                <li><a href="tiposF.html">Tipos De Framework</a></li>
+                <li><a href="mapa.html">Ventajas y Desventajas</a></li>
+                <li><a href="organizador.html">Tipos de Hosting</a></li>
+                <li><a href="tabla.html">Tabla comparativa</a></li>
+            </ul>
+            <div class="bars">
+                <i class="ri-menu-2-fill"></i>
+            </div>
+        </nav>
+    </header>
+    <style>
+        h1 {
+          font-size: 50px;
+          text-align: center;
+          animation: mymove 3s infinite;
+          margin-top: 60px;
+        }
+    
+        @keyframes mymove {
+          from {color: rgb(189, 109, 62);}
+          to {color: rgb(255, 0, 115);}
+         }
+         .container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 220px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 430px;
+}
+
+.container .card .image{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .image img{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+      </style>
+    </head>
+    <body>
+      <h1>Metodos De Conexion a Bases De Datos</h1>
+      <h2>¿Qué es una conexión a base de datos?</h2>
+      <p>
+        Imagina una base de datos como una biblioteca gigante llena de libros (datos). Para acceder a esos libros, necesitas una tarjeta de biblioteca (conexión) que te permita entrar y buscar la información que necesitas.
+        Una conexión a base de datos es ese puente que establece una aplicación con una base de datos para poder leer, escribir o modificar los datos almacenados.
+        peticiones es a través del protocolo HTTP (Hypertext Transfer Protocol).
+      </p>
+      <h2>¿Por qué son importantes los métodos de conexión?</h2>
+      <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Eficiencia</strong>: Un buen método de conexión optimiza el uso de recursos y mejora el rendimiento de la aplicación.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Seguridad</strong>: Protege los datos de accesos no autorizados.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Portabilidad</strong>: Permite que una aplicación se conecte a diferentes tipos de bases de datos.</li>
+    </ul>
+        <h2>Principales metodos de Conexion</h2>
+      <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="imagenes/cuadro1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>ODBC (Open Database Connectivity):</h2>
+                <p>1.Es una interfaz estándar que permite a aplicaciones conectarse a diferentes tipos de bases de datos.
+                    2.Utiliza drivers ODBC específicos para cada base de datos.
+                    3.Es muy flexible y ampliamente utilizado.</p>
+            </div>
+        </div>
+     <div class="card">
+        <div class="image">
+            <img src="imagenes/cuadro2.png" alt="">
+        </div>
+        <div class="content">
+            <h2>JDBC (Java Database Connectivity):</h2>
+            <p>1.Similar a ODBC, pero diseñado específicamente para Java.
+                2.Utiliza drivers JDBC para conectarse a bases de datos.
+                3.Es esencial para desarrollar aplicaciones Java que interactúan con bases de datos.</p>
+        </div>
+    </div>
+ <div class="card">
+    <div class="image">
+        <img src="imagenes/cuadro3.webp" alt="">
+    </div>
+    <div class="content">
+        <h2>ADO.NET:</h2>
+        <p>1.Framework de Microsoft para el acceso a datos en aplicaciones .NET.
+            2.Proporciona una capa de abstracción sobre diferentes tipos de bases de datos.
+            3.Es muy utilizado en el desarrollo de aplicaciones Windows.</p>
+    </div>
+   </div>
+      </div>
+      <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="imagenes/cuadro3.webp" alt="">
+            </div>
+            <div class="content">
+                <h2>ORM (Object-Relational Mapping):</h2>
+                <p>1.Mapea objetos de programación a tablas de una base de datos.
+                    2.Simplifica la interacción con la base de datos, ya que permite trabajar con objetos en lugar de SQL.
+                    3.Ejemplos populares: Entity Framework (Microsoft), Hibernate (Java).</p>
+            </div>
+           </div>
+        <div class="card">
+            <div class="image">
+                <img src="imagenes/cuadro3.webp" alt="">
+            </div>
+            <div class="content">
+                <h2>API nativas de la base de datos:</h2>
+                <p>1.Proporcionadas por el propio sistema de gestión de bases de datos (SGBD).
+                    2.Ofrecen un control más granular sobre la conexión y las operaciones.
+                    3.Ejemplos: SQL Server Native Client, MySQL Connector/C++.</p>
+            </div>
+           </div>
+      </div>
+
+    <h2>Factores a considerar al elegir un método:</h2>
+      <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Lenguaje de programación</strong>: El método debe ser compatible con el lenguaje que estás utilizando.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Tipo de base de datos</strong>: Algunos métodos son más adecuados para ciertos tipos de bases de datos.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Rendimiento</strong>: La eficiencia del método puede variar según la aplicación.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Seguridad</strong>: El método debe proporcionar mecanismos de autenticación y autorización adecuados.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Facilidad de uso</strong>: La curva de aprendizaje y la disponibilidad de herramientas pueden influir en la elección.</li>
+    </ul>
+    <h2>Conceptos clave relacionados:</h2>
+      <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Driver</strong>: Software que permite a una aplicación comunicarse con una base de datos específica.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Cadena de conexión</strong>: Conjunto de parámetros que especifican cómo conectarse a una base de datos (servidor, base de datos, usuario, contraseña, etc.).</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">SQL (Structured Query Language)</strong>: Lenguaje estándar para manipular bases de datos relacionales.</li>
+    </ul>
+      
+    <style>
+        .texto-bonito {
+            font-family: 'Times New Roman', serif;
+            font-size: 15px;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        img{
+            margin-top: 0;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            
+        }
+        img:hover {
+        transform: scale(1.1);
+        }
+        
+    </style>
+    <div class="texto-bonito"><h2>Video para mas Informacion</h2></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gBK-Mfa0lw8?si=iwI_atgL3ZUe_xHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <footer style="background-color: #DDEDEA; color: #fff; padding: 20px; text-align: center;" >
+        <p style="font-size: 14px; margin: 0;">&copy;Sanchez Leana Joshua Miguel 5APGM</p>
+    </footer>
+</div>
+</body>
+</html>

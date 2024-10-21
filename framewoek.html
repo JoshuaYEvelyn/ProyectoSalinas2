@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>frame</title>
+    <link rel="stylesheet" href="cssframe.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="framewoek.html">Framework</a></li>
+                <li><a href="lineaTime.html">Linea De Tiempo</a></li>
+                <li><a href="tiposF.html">Tipos De Framework</a></li>
+                <li><a href="mapa.html">Ventajas y Desventajas</a></li>
+                <li><a href="organizador.html">Tipos de Hosting</a></li>
+                <li><a href="tabla.html">Tabla comparativa</a></li>
+            </ul>
+            <div class="bars">
+                <i class="ri-menu-2-fill"></i>
+            </div>
+        </nav>
+    </header>
+    <img src="imagenes/artificial-intelligence-3706562_1920.jpg"class="imagen-horizontal">
+    <h2 style="color:  lightblue; font-family: Roboto; text-align: left; margin-top: 50px; margin-left: 20px;">
+        ¿Qué es un FRAMEWORK?
+    </h2>
+    <div class="container">
+    <p class="text"> Un Framework es una estructura base que sirve como punto de partida para desarrollar proyectos con objetivos específicos. Es, en esencia, una plantilla predefinida que facilita la creación de aplicaciones o software, proporcionando un esquema conceptual que simplifica el trabajo. En lugar de construir todo desde cero, los desarrolladores pueden aprovechar esta estructura y complementarla según las necesidades del proyecto. Esto no solo acelera el proceso de desarrollo, sino que también permite entregar productos más eficientes y con menos errores, ya que muchos aspectos del Framework han sido probados y optimizados previamente.
+    </p>
+   <img src="imagenes/backend-4496461_1280.png" class="image"></div>
+   <h2 style="color:  rgb(186, 220, 189);font-family: Roboto; text-align: left; margin-top: 50px; margin-left: 20px;"> ¿Para qué se utiliza un Framework en Internet? </h2>
+   <p class="text2">Para cualquier proyecto en Internet se requiere un desarrollador web que produzca el software o la aplicación que necesitamos. Dependiendo del tipo de proyecto, esta tarea puede durar mucho tiempo si se crea de la nada. Es necesario elaborar parte por parte, haciendo pruebas y aciertos hasta conseguir el objetivo.
+    Todo esto puede requerir uno o más programadores, además del tiempo suficiente para realizar las pruebas necesarias hasta que el software esté funcionando perfectamente. Sin embargo, los Frameworks permiten entregar un proyecto en menos tiempo y con un código más limpio, cuya eficacia ya ha sido comprobada.
+    A partir del Framework los programadores pueden complementar y/o modificar la estructura base para entregar el software o la aplicación que cumpla los objetivos requeridos.
+    </p>
+    <div class="carrusel">
+        <img id="imagen" src="imagenes/programador.png" class="active">
+        <img src="imagenes/programmer-1653351_1280.png">
+        <img src="imagenes/codificacion.png">
+    </div>
+    
+    <script>
+        
+        var imagenes = document.querySelectorAll(".carrusel img");
+        var indiceActual = 0; 
+
+        
+        function cambiarImagen() {
+            imagenes[indiceActual].classList.remove("active");
+            indiceActual++;
+
+            
+            if (indiceActual >= imagenes.length) {
+                indiceActual = 0;
+            }
+
+            imagenes[indiceActual].classList.add("active");
+        }
+
+        
+        setInterval(cambiarImagen, 3000);
+    </script>
+
+       
+    <h2 style="color: green; font-family: Roboto; text-align: left; margin-top: 50px; margin-left: 20px;"> Tipos de Frameworks </h2>
+
+    <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Node.js</strong>: Framework popular para aplicaciones de servidor </li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">React.js</strong>: Framework de JavaScript para construir interfaces de usuario </li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">jQuery</strong>: Librería de JavaScript para manipulación del DOM </li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Express</strong>: Framework minimalista para aplicaciones web en Node.js </li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Angular</strong>: Framework de JavaScript desarrollado por Google</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Vue</strong>: Framework progresivo para construir interfaces de usuario</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Django</strong>: Un framework versátil y eficiente para construir aplicaciones web escalables y dinámicas</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Bootstrap</strong>: Un framework CSS utilizado en sitios de empresas como Twitter, Spotify y Udacity</li>
+    </ul>
+    <h2 style="color: gray; font-family: Roboto; text-align: left; margin-top:50px; margin-left: 10px;"> ¿Como elegir un buen Framework? </h2>
+    <p class="text2"> Elegir el framework adecuado para un proyecto de desarrollo web es una decisión crucial que puede afectar significativamente la productividad, el rendimiento y el éxito general del proyecto. Aquí hay algunos consejos para ayudarte a elegir el framework más adecuado:</p>
+    <ul class="custom-list-2 text2">
+        <li style=" color:black; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;">
+            <span style=" color:yellow">Comprende los requisitos del proyecto:</span> 
+            Asegúrate de conocer las funcionalidades y escalabilidad necesarias para elegir un framework que se adapte a tus necesidades.
+        </li>
+        <li style=" color:black; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;">
+            <span style=" color:yellow">Evalúa la tecnología existente:</span> 
+            Considera cómo el framework se integra con tu infraestructura actual, teniendo en cuenta lenguajes y bases de datos.
+        </li>
+        <li style=" color:black; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;">
+            <span style=" color:yellow">Considera la curva de aprendizaje:</span> 
+            Elige un framework que el equipo pueda aprender rápidamente, pero balancea con las demandas del proyecto.
+        </li>
+        <li style=" color:black; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;">
+            <span style=" color:yellow">Analiza el rendimiento y la escalabilidad:</span> 
+            Verifica si el framework maneja bien el tráfico y la complejidad si tu aplicación crecerá a largo plazo.
+        </li>
+        <li style=" color:black; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;">
+            <span style=" color:yellow">Evaluación de características y flexibilidad:</span> 
+            Asegúrate de que el framework ofrezca las características específicas necesarias y que sea flexible para el tipo de aplicación que construirás.
+        </li>
+        <li style=" color:black; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;">
+            <span style=" color:yellow">Prueba el framework:</span> 
+            Realiza un prototipo o prueba de concepto para evaluar cómo se ajusta a las necesidades del proyecto.
+        </li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_-TKjgEsukM?si=mj38Dk9xMCO4jMFe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <footer style="background-color: #DDEDEA; color: #fff; padding: 20px; text-align: center;" >
+        <p style="font-size: 14px; margin: 0;">&copy;Sanchez Leana Joshua Miguel 5APGM</p>
+    </footer>
+   </body>
+</html>

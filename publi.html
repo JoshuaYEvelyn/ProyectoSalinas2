@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>frame</title>
+    <link rel="stylesheet" href="cssframe.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="framewoek.html">Framework</a></li>
+                <li><a href="lineaTime.html">Linea De Tiempo</a></li>
+                <li><a href="tiposF.html">Tipos De Framework</a></li>
+                <li><a href="mapa.html">Ventajas y Desventajas</a></li>
+                <li><a href="organizador.html">Tipos de Hosting</a></li>
+                <li><a href="tabla.html">Tabla comparativa</a></li>
+            </ul>
+            <div class="bars">
+                <i class="ri-menu-2-fill"></i>
+            </div>
+        </nav>
+    </header>
+    <img src="imagenes/inicio.png"class="imagen-horizontal">
+    <h1 align="center" style="color: #cdb4db; font-family: Roboto; text-align: left; margin-top: 50px; margin-left: 20px;">
+        Publicaciones de una página web
+    </h1>
+    <p>Las publicaciones de una página web son las piezas de contenido que se comparten con los visitantes. Pueden ser artículos, 
+        noticias, blog posts, videos, imágenes, etc. Son la forma principal de atraer y retener a la audiencia.Las publicaciones 
+        de una página web son como los capítulos de un libro. Cada capítulo (publicación) habla de un tema diferente y aporta valor al libro (sitio web).</p>
+    <h2 align="center" style="color:black; font-family: Roboto; text-align: left; margin-top: 50px; margin-left: 20px;">
+        ¿Por qué son importantes?
+    </h2>
+    <div class="container">
+    
+    <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Atraen lectores</strong>: Si el libro es interesante y tiene capítulos nuevos, más gente querrá leerlo.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Hacen el libro más completo</strong>: Cuantos más capítulos tenga un libro, más completo será y más personas lo recomendarán.
+        </li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Ayudan a encontrar el libro</strong>: Si el libro tiene muchos capítulos sobre un tema específico, será más fácil encontrarlo en el catálogo (los motores de búsqueda).</li>
+    </ul>
+    <img src="imagenes/imagenraro (2).png" class="image">
+    </div>
+    <h2 align="center" style="color:black; font-family: Roboto; text-align: left; margin-top: 50px; margin-left: 20px;">
+        Ejemplos de publicaciones:
+    </h2>
+    
+    <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">Artículos</strong>: Capítulos largos que explican un tema en detalle.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Noticias</strong>: Capítulos cortos con información actualizada.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Fotos</strong>: Imágenes que ilustran un tema.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">Videos</strong>: Grabaciones que muestran algo.</li>
+    </ul>
+    <h2 align="center" style="color:black; font-family: Roboto; text-align: left; margin-top: 50px; margin-left: 20px;">
+        ¿Cómo hacer buenas publicaciones?
+    </h2>
+    </div>
+    <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;"></strong>Escribe sobre temas que interesen a tus lectores.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;"></strong>Organiza bien la información.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;"></strong>Usa imágenes y videos para hacer más atractivos tus capítulos.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;"></strong>Invita a tus lectores a participar.</li>
+    </ul>
+    
+    <div class="carrusel">
+        <img id="imagen" src="imagenes/publi1 (1).png" class="active">
+        <img src="imagenes/publi1 (2).png">
+        <img src="imagenes/publi1 (3).png">
+    </div>
+    <script>
+        
+        var imagenes = document.querySelectorAll(".carrusel img");
+        var indiceActual = 0; 
+
+        
+        function cambiarImagen() {
+            imagenes[indiceActual].classList.remove("active");
+            indiceActual++;
+
+            
+            if (indiceActual >= imagenes.length) {
+                indiceActual = 0;
+            }
+
+            imagenes[indiceActual].classList.add("active");
+        }
+
+        
+        setInterval(cambiarImagen, 3000);
+    </script>
+    <div class="texto-bonito"><h2>Video para mas Informacion</h2></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vh3lj2hBajs?si=HcQ9RaGUtQKtwQfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <footer style="background-color: #DDEDEA; color: #fff; padding: 20px; text-align: center;" >
+        <p style="font-size: 14px; margin: 0;">&copy;Sanchez Leana Joshua Miguel 5APGM</p>
+    </footer>
+   </body>
+</html>

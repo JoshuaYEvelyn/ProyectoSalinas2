@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cssframe.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="framewoek.html">Framework</a></li>
+                <li><a href="lineaTime.html">Linea De Tiempo</a></li>
+                <li><a href="tiposF.html">Tipos De Framework</a></li>
+                <li><a href="mapa.html">Ventajas y Desventajas</a></li>
+                <li><a href="organizador.html">Tipos de Hosting</a></li>
+                <li><a href="tabla.html">Tabla comparativa</a></li>
+            </ul>
+            <div class="bars">
+                <i class="ri-menu-2-fill"></i>
+            </div>
+        </nav>
+    </header>
+    <style>
+        h1 {
+          font-size: 50px;
+          text-align: center;
+          animation: mymove 3s infinite;
+          margin-top: 60px;
+        }
+    
+        @keyframes mymove {
+          from {color: rgb(189, 109, 62);}
+          to {color: rgb(255, 0, 115);}
+         }
+         .container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 220px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 430px;
+}
+
+.container .card .image{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .image img{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+      </style>
+    </head>
+    <body>
+      <h1>Manejo de Peticion Web</h1>
+      <h2>¿Qué es una Petición Web?</h2>
+      <p>
+        Investigación sobre el Manejo de Peticiones Web
+        ¿Qué es una Petición Web?
+        Una petición web es una solicitud que un cliente (generalmente un navegador web) envía a un servidor para obtener un recurso específico. 
+        Este recurso puede ser una página web, una imagen, un archivo o cualquier otro tipo de dato. La forma más común de realizar estas 
+        peticiones es a través del protocolo HTTP (Hypertext Transfer Protocol).
+      </p>
+      <h2>¿Cómo funciona?</h2>
+      <ul class="custom-list" class="text2">
+        <li style=" color:black; font-size: 15px;  font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">El cliente solicita</strong>: Tú escribes una dirección web en tu navegador. </li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">El navegador envía</strong>: Convierte esa dirección en un mensaje (petición) y lo envía al servidor.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">El servidor procesa</strong>: Recibe la petición, busca la información y prepara una respuesta. </li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color: #a0c4ff;">El servidor envía</strong>: Envía la respuesta al navegador.</li>
+        <li style=" color:black;  font-size: 15px; font-family:poppins; text-align: left; margin-top:20px; margin-left: 20px;"><strong style=" color:  #a0c4ff;">El navegador muestra</strong>: Muestra la información en tu pantalla.</li>
+    </ul>
+      <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="imagenes/cuadro1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Elementos clave:</h2>
+                <p>1.Métodos HTTP: Indican la acción a realizar (GET para obtener, POST para enviar datos, etc.).
+                    2.URL: La dirección del recurso solicitado.
+                    3.Cabeceras: Información adicional sobre la petición y el cliente.
+                    4.Cuerpo: Datos enviados al servidor (por ejemplo, datos de un formulario).</p>
+            </div>
+        </div>
+     <div class="card">
+        <div class="image">
+            <img src="imagenes/cuadro2.png" alt="">
+        </div>
+        <div class="content">
+            <h2>¿Cómo se manejan en el servidor?</h2>
+            <p>1.Servidor web: Software que recibe y responde a las peticiones (ej: Apache, Nginx).
+                2.Lenguajes de programación: Se usan para crear aplicaciones que procesan las peticiones (ej: PHP, Python, JavaScript).
+                3.Frameworks: Herramientas que facilitan el desarrollo de aplicaciones web (ej: Laravel, Django).</p>
+        </div>
+    </div>
+ <div class="card">
+    <div class="image">
+        <img src="imagenes/cuadro3.webp" alt="">
+    </div>
+    <div class="content">
+        <h2>Conceptos importantes:</h2>
+        <p>1.Caching: Almacenar temporalmente información para acelerar el acceso.
+            2.Seguridad: Proteger las aplicaciones de ataques (ej: inyecciones SQL, XSS).
+            3.Escalabilidad: Capacidad de manejar muchas peticiones simultáneas.
+            4.APIs: Interfaces para que diferentes aplicaciones se comuniquen.
+            5.WebSockets: Comunicación en tiempo real entre cliente y servidor.</p>
+    </div>
+   </div>
+      </div>
+      
+
+
+      <h1>Organizdor Grafico</h1>
+    <style>
+        .texto-bonito {
+            font-family: 'Times New Roman', serif;
+            font-size: 15px;
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: #f2f2f2;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        img{
+            margin-top: 0;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            
+        }
+        img:hover {
+        transform: scale(1.1);
+        }
+        
+    </style>
+    <img align="center" width="100%"  src="imagenes/Tipos de Hosting.png" alt="" style="transition: transform 0.3s ease-in-out;">
+    <div class="texto-bonito"><h2>Video para mas Informacion</h2></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gBK-Mfa0lw8?si=iwI_atgL3ZUe_xHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <footer style="background-color: #DDEDEA; color: #fff; padding: 20px; text-align: center;" >
+        <p style="font-size: 14px; margin: 0;">&copy;Sanchez Leana Joshua Miguel 5APGM</p>
+    </footer>
+</div>
+</body>
+</html>
